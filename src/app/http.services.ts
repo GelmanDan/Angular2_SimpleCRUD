@@ -7,6 +7,6 @@ export class HttpService{
     constructor(private http: Http){ }
      
     getData(){
-        return this.http.get('artical.json')
+        return this.http.get('data.json')
     }
 }

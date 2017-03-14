@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Response} from '@angular/http';
-import { HttpService} from './http.service';
+import { HttpService} from './http.services';
 import { Artical } from './artical';
  
 @Component({
@@ -12,12 +12,13 @@ import { Artical } from './artical';
 export class AppComponent implements OnInit {
     
     title = 'app works!';
-    artical: Artical;
+    articals: Artical;
     
-    constructor(privagette httpService: HttpService){}
+     constructor(private httpService: HttpService){}
     
     ngOnInit(){
-        this.httpService.getData().subscribe((artical: Response) => this.artical = artical.json);    
+        this.httpService.getData().subscribe((data: Response) => this.articals = data.json());  
+        console.log("data.json succeseful download");
     }
     
     
