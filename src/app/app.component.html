@@ -3,6 +3,6 @@
 <div *ngFor="let artical of articals">
     <h1 class="header">{{artical?.title}}</h1>
     <p>{{artical?.img}}</p>
-    <div class="" [innerHTML]="artical?.body"></div>
+    <div class="" [innerHTML]="artical?.body | keepHtml"></div>
     <p>{{artical?.date}}</p>
 </div>
