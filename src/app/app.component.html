@@ -1,8 +1,8 @@
 <h1>Testing</h1>
 
 <div *ngFor="let artical of articals">
-    <h1>{{artical?.title}}</h1>
+    <h1 class="header">{{artical?.title}}</h1>
     <p>{{artical?.img}}</p>
-    {{artical?.body}}
+    <div class="" [innerHTML]="artical?.body"></div>
     <p>{{artical?.date}}</p>
 </div>
