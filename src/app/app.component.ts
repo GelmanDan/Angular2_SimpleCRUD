@@ -5,6 +5,8 @@ import { Artical } from './artical';
 
 import { DomSanitizer,SafeStyle } from '@angular/platform-browser';
 
+import {AddModule} from './add/add.module';
+
 
 @Component({
   selector: 'app-root',

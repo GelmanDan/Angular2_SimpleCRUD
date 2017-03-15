@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
+import { AddComponent } from './add/add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EscapeHtmlPipe
+    EscapeHtmlPipe,
+    AddComponent
   ],
   imports: [
     BrowserModule,

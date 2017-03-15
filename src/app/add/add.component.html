@@ -1,0 +1,10 @@
+<h3>Title</h3>
+<input type="text" class="form-control" placeholder="Title for artical" name="title" #newtitle>
+
+<h3>Body</h3>
+<textarea class="form-control" rows="3" #newbody></textarea>
+
+<h3>Date</h3>
+<input type="text" class="form-control" placeholder="Text input" name="date" #newdate>
+
+<button type="submit" class="btn btn-primary" (click)="newArtical(newtitle, newbody, newdate)">Add artical</button>
