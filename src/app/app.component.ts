@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     title = 'app works!';
     articals: Artical;
     
-     constructor(private httpService: HttpService, private sanitizer: DomSanitizer){}
+    constructor(private httpService: HttpService, private sanitizer: DomSanitizer){}
     
     
     

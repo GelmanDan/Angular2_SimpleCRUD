@@ -1,8 +1,16 @@
 <h1>Testing</h1>
 
+<h3>Title</h3>
+<input type="text" class="form-control" placeholder="Title for artical">
+<h3>Body</h3>
+<textarea class="form-control" rows="3"></textarea>
+<h3>Date</h3>
+<input type="text" class="form-control" placeholder="Text input">
+<button type="submit" class="btn btn-primary" [(ngModel)="newArtical"]>Add artical</button>
+
+
 <div *ngFor="let artical of articals">
     <h1 class="header">{{artical?.title}}</h1>
-    <p>{{artical?.img}}</p>
     <div class="" [innerHTML]="artical?.body | keepHtml"></div>
     <p>{{artical?.date}}</p>
 </div>
